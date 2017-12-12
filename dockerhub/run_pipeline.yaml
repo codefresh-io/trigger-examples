@@ -4,4 +4,4 @@ steps:
 
   # print fortune to log
   greeting:
-    image: codefresh/fortune
+    image: codefresh/fortune:stable
