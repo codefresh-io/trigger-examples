@@ -31,8 +31,8 @@ Deploy Codefresh *Hermes* (Trigger Manager) and *Nomios* (DockerHub Event Provid
 ### Codefresh Setup: pipeline and trigger
 
 1. Create new Codefresh Repository from [trigger-examples](https://github.com/codefresh-io/trigger-examples)
-1. Create a new `build` Codefresh pipeline from `dockerhub/build_pipeline.yaml` file
-1. Create a new `run` Codefresh pipeline from `dockerhub/run_pipeline.yaml` file
+1. Create a new `build_fortune` Codefresh pipeline from `dockerhub/build_pipeline.yaml` file
+1. Create a new `run_fortune` Codefresh pipeline from `dockerhub/run_pipeline.yaml` file
 1. Configure a new *Hermes* DockerHub trigger, named `index.docker.io:codefresh:fortune:push`
 1. Get *Nomios* service public IP (for example `135.14.15.24`)
 
