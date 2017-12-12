@@ -1,0 +1,7 @@
+version: '1.0'
+
+steps:
+
+  # print fortune to log
+  greeting:
+    image: codefresh/fortune

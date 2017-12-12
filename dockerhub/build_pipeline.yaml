@@ -1,0 +1,12 @@
+version: '1.0'
+
+steps:
+  build_fortune:
+    type: build
+    dockerfile: dockerhub/Dockerfile
+    image_name: codefresh/fortune
+
+  dockerhub_push:
+    type: push
+    candidate: ${{build_fortune}}
+    tag: stable
