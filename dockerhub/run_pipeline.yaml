@@ -2,6 +2,11 @@ version: '1.0'
 
 steps:
 
+  print_event:
+    image: alpine:3.6
+    commands:
+      - env | grep "EVENT_"
+
   # print fortune to log
   fortune:
     image: codefresh/fortune:stable
