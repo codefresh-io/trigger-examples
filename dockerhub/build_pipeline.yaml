@@ -5,6 +5,7 @@ steps:
     type: build
     dockerfile: dockerhub/Dockerfile
     image_name: codefresh/fortune
+    no_cache: true
 
   dockerhub_push:
     type: push
