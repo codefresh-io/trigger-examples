@@ -6,6 +6,6 @@ steps:
     image: bash:4
     commands:
       - env | grep "EVENT_"
-      - if [[ ! $EVENT_TAG =~ (do_).* ]]; then echo "Tag $EVENT_TAG does not match (do_).* regex!" && exit 1; fi 
+      - bash -c "if [[ ! $EVENT_TAG =~ (do_).* ]]; then echo Tag $EVENT_TAG does not match '(do_).*' regex! && exit 1; fi"
 
  
